@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-50.times do |i|
+500.times do |i|
   User.create(
     name: Faker::Witcher.character,
     email: Faker::Internet.email,
@@ -17,5 +17,17 @@
     country: Faker::Address.country,
     postal_code: Faker::Address.postcode,
     quote: Faker::Witcher.quote
+  )
+
+  User.create(
+    name: Faker::HarryPotter.character,
+    email: Faker::Internet.email,
+    school: Faker::HarryPotter.house,
+    street_address: Faker::Address.street_address,
+    city: Faker::HarryPotter.location,
+    province: Faker::Address.state,
+    country: Faker::Address.country,
+    postal_code: Faker::Address.postcode,
+    quote: Faker::HarryPotter.quote
   )
 end
