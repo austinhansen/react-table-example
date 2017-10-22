@@ -13,7 +13,7 @@ class UserTable extends Component {
   }
 
   componentWillMount() {
-    fetch(`http://localhost:3000/users`)
+    fetch(`/users`)
     .then(result=> {
       return result.json()
     }).then(data => {
