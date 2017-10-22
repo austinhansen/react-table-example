@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def index
     @users = User.all
     render json: { status: 200,
-                   data: @users }
+                   users: @users }
   end
 
   def generate_csv
