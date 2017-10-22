@@ -50,7 +50,8 @@ class UserTable extends Component {
       accessor: 'country'
     }, {
       Header: 'Quote',
-      accessor: 'quote'
+      accessor: 'quote',
+      minWidth: 370
     }]
 
     return (
